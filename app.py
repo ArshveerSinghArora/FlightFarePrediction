@@ -220,43 +220,31 @@ def predict():
         # Source
         
         Source = request.form["Source"]
-        if (Source == 'Delhi'):
-            s_Delhi = 1
-            s_Kolkata = 0
-            s_Mumbai = 0
-            s_Chennai = 0
-            s_Banglore= 0
-        
-        elif (Source == 'Kolkata'):
-            s_Delhi = 0
+        if(Source == 'Kolkata'):
             s_Kolkata = 1
             s_Mumbai = 0
             s_Chennai = 0
             s_Banglore= 0
 
         elif (Source == 'Mumbai'):
-            s_Delhi = 0
             s_Kolkata = 0
             s_Mumbai = 1
             s_Chennai = 0
             s_Banglore= 0     
 
         elif (Source == 'Chennai'):
-            s_Delhi = 0
             s_Kolkata = 0
             s_Mumbai = 0
             s_Chennai = 1
             s_Banglore= 0
 
         elif (Source == 'Banglore'):
-            s_Delhi = 0
             s_Kolkata = 0
             s_Mumbai = 0
             s_Chennai = 0
             s_Banglore= 1
         
         else :
-            s_Delhi = 0
             s_Kolkata = 0
             s_Mumbai = 0
             s_Chennai = 0
@@ -277,15 +265,6 @@ def predict():
             d_New_Delhi = 0
             d_Hyderabad = 0
             d_Kolkata = 0
-            d_Delhi = 0
-            
-        elif (Destination == 'Delhi'):
-            d_Cochin = 0
-            d_Banglore = 0
-            d_New_Delhi = 0
-            d_Hyderabad = 0
-            d_Kolkata = 0
-            d_Delhi = 1
 
         elif (Destination == 'Banglore'):
             d_Cochin = 0
@@ -293,7 +272,6 @@ def predict():
             d_New_Delhi = 0
             d_Hyderabad = 0
             d_Kolkata = 0
-            d_Delhi = 0
 
         elif (Destination == 'New_Delhi'):
             d_Cochin = 0
@@ -301,7 +279,6 @@ def predict():
             d_New_Delhi = 1
             d_Hyderabad = 0
             d_Kolkata = 0
-            d_Delhi = 0
 
         elif (Destination == 'Hyderabad'):
             d_Cochin = 0
@@ -309,7 +286,6 @@ def predict():
             d_New_Delhi = 0
             d_Hyderabad = 1
             d_Kolkata = 0
-            d_Delhi = 0
 
         elif (Destination == 'Kolkata'):
             d_Cochin = 0
@@ -317,7 +293,6 @@ def predict():
             d_New_Delhi = 0
             d_Hyderabad = 0
             d_Kolkata = 1
-            d_Delhi = 0
 
         else:
             d_Cochin = 0
@@ -325,7 +300,6 @@ def predict():
             d_New_Delhi = 0
             d_Hyderabad = 0
             d_Kolkata = 0
-            d_Delhi = 0
 
         # print(
         #     d_Cochin,
@@ -333,7 +307,6 @@ def predict():
         #     d_New_Delhi,
         #     d_Hyderabad,
         #     d_Kolkata
-        #     d_Delhi 
         # )
         
 
@@ -370,7 +343,6 @@ def predict():
             Vistara,
             Vistara_Premium_economy,
             s_Chennai,
-            s_NewDelhi,
             s_Kolkata,
             s_Mumbai,
             s_Banglore,
@@ -379,7 +351,6 @@ def predict():
             d_Hyderabad,
             d_Kolkata,
             d_New_Delhi,
-            d_Delhi
         ]])
 
         output=round(prediction[0],2)

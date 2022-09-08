@@ -1,2 +1,2 @@
-,airline,Source,Destination,Total_stops,date_arr,date_dep,Predicted Output
-0,SpiceJet,Banglore,Cochin,1,2022-09-10T14:40,2022-09-10T06:10,6668.13
+,Airline,Source,Destination,Total_stops,Date+Time_Arrival,Date+Time_Departure,Predicted Output
+0,Air Asia,Mumbai,New Delhi,0,2022-09-08T02:25,2022-09-08T11:25,7135.09
